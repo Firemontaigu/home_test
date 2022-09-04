@@ -24,4 +24,5 @@ pipeline {
                deploy adapters: [tomcat9(credentialsId: 'b809c03b-0420-4e49-9b2b-f00a976f8945', path: '', url: 'http://127.0.0.1:8080/')], contextPath: 'TomcatJimmy', war: '**/*.war'
             } 
         }
+    }
 }
